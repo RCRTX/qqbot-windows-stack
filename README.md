@@ -109,8 +109,16 @@ py -3.12 -m venv .venv
 
 更多信息见 [运行与排障](docs/OPERATIONS.md)、[发布范围与验证](docs/RELEASE.md)。
 
+## Fork 与分支
+
+本仓库是官方 [MaiBot](https://github.com/Mai-with-u/MaiBot) 的 Fork，默认分支为 **`windows-stack`**，用于发布完整 Windows 机器人栈。`main` 保留创建 Fork 时的官方源码；本发行版的定制核心位于 `bot/MaiBotOneKey/modules/MaiBot/`，因此目录结构与官方根目录不同。
+
+更新本发行版请使用 `git pull --ff-only origin windows-stack`。不要把官方 `main` 直接覆盖到本发行版目录。后续引入官方更新时，应先在独立分支处理核心修改与集成路径，并验证后再合并。
+
+关联 Fork 前的独立仓库及原 `v1.0.0` Release 保存在 [独立仓库备份](https://github.com/RCRTX/qqbot-windows-stack-standalone-backup)。本 Fork 的 Windows 栈 Release 使用 `windows-stack-v1.0.0` 等带前缀标签，与上游版本区分。
+
 ## 源码与许可证
 
-本项目包含定制的 [MaiBot](https://github.com/MaiM-with-u/MaiBot) 与 [MaiBotOneKey](https://github.com/DrSmoothl/MaiBotOneKey) 源码，保留各自 GPL-3.0 许可证与署名。集成及新增代码以 GPL-3.0 发布。Dashboard 等子目录另有 AGPL-3.0 声明；A_memorix 同时保留原许可及 MaiBot 特别授权，不能将全部文件视为同一许可。详情见 [第三方说明](THIRD_PARTY_NOTICES.md) 和 [LICENSE](LICENSE)。
+本项目包含定制的 [MaiBot](https://github.com/Mai-with-u/MaiBot) 与 [MaiBotOneKey](https://github.com/DrSmoothl/MaiBotOneKey) 源码，保留各自 GPL-3.0 许可证与署名。集成及新增代码以 GPL-3.0 发布。Dashboard 等子目录另有 AGPL-3.0 声明；A_memorix 同时保留原许可及 MaiBot 特别授权，不能将全部文件视为同一许可。详情见 [第三方说明](THIRD_PARTY_NOTICES.md) 和 [LICENSE](LICENSE)。
 
 QQ、SnowLuma、Python 与模型服务是独立外部依赖，不打包其二进制、登录态或服务授权。使用时遵守各服务条款，仅处理你有权处理的群聊数据。管理面板具有配置与服务控制能力，默认仅在本机访问，不要直接暴露到公网。

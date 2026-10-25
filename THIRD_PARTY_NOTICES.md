@@ -5,7 +5,7 @@
 | 组件 | 来源 | 许可 / 说明 |
 | --- | --- | --- |
 | MaiBotOneKey 启动器源码 | https://github.com/DrSmoothl/MaiBotOneKey ，基于 `67ba90cbf58320cb8a4ce6599f6267955ce52742` | `bot/MaiBotOneKey/LICENSE`，GPL-3.0 |
-| MaiBot 1.2.5 与本地修改 | https://github.com/MaiM-with-u/MaiBot ，基于 `1f16661b665c8f7150a2e4b545f4f24fbff34638` | `bot/MaiBotOneKey/modules/MaiBot/LICENSE`，GPL-3.0；子模块单独许可继续适用 |
+| MaiBot 1.2.5 与本地修改 | https://github.com/Mai-with-u/MaiBot ，基于 `1f16661b665c8f7150a2e4b545f4f24fbff34638` | `bot/MaiBotOneKey/modules/MaiBot/LICENSE`，GPL-3.0；子模块单独许可继续适用 |
 | MaiBot Dashboard | MaiBot 源码内的 `dashboard/` | `dashboard/LICENSE`，AGPL-3.0 |
 | A_memorix | MaiBot 源码内的 `src/A_memorix/` | 保留 `LICENSE`（AGPL-3.0）和 `LICENSE-MAIBOT-GPL.md`（针对 MaiBot 项目上下文的额外 GPL 许可）；分发、修改与抽取使用时遵守对应条款 |
 | 模型客户端子模块 | MaiBot 源码内的 `src/llm_models/` | 以该子目录 `LICENSE` 为准 |

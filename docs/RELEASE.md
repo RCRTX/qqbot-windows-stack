@@ -2,6 +2,8 @@
 
 本次公开发布提供 qq-monitor 群消息监控/检索/审核、统一控制台、定制 MaiBot 核心及相关插件源码，并附中文用途、安装、模型配置和排障说明。
 
+当前仓库已关联为官方 MaiBot 的 Fork，默认分支为 `windows-stack`，`main` 保留官方源码。当前发行标签为 `windows-stack-v1.0.0`；此前独立仓库及其原始 `v1.0.0` Release 完整保留在 `RCRTX/qqbot-windows-stack-standalone-backup`。
+
 ## 下载与使用
 
 下载此 Release 的 Source code ZIP 并解压，安装 Windows 64 位 Python 3.12，运行 `setup.bat`；填写自己的 OneBot 账号、令牌与群列表后运行 `start.bat`。QQ 和 SnowLuma 需要自行安装并完成接入。
