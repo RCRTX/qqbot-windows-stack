@@ -1,0 +1,102 @@
+{
+  "napcat": {
+    "ws_url": "ws://localhost:3001",
+    "http_url": "http://localhost:3000",
+    "token": "",
+    "monitor_groups": []
+  },
+  "storage": {
+    "data_dir": "./data",
+    "log_dir": "./logs",
+    "export_dir": "./聊天记录",
+    "max_storage_mb": 500,
+    "archive_days": 30,
+    "file_rotate_hours": 24,
+    "save_images": true,
+    "max_image_size_mb": 5,
+    "save_files": true,
+    "large_file_confirm_mb": 1024,
+    "max_alert_records": 1000,
+    "max_memory_index_per_group": 10000,
+    "max_saved_ids": 200000,
+    "max_finished_pending_records": 200,
+    "auto_cleanup_enabled": false
+  },
+  "ai_review": {
+    "enabled": false,
+    "api_base": "http://127.0.0.1:11434/v1",
+    "api_key": "",
+    "model": "",
+    "review_interval_minutes": 5,
+    "max_messages_per_review": 100,
+    "context_before_messages": 3,
+    "context_after_messages": 2,
+    "system_prompt": "只依据明确证据判断风险，证据不足不判违规，只输出约定的 JSON。"
+  },
+  "secondary_ai_review": {
+    "enabled": false,
+    "api_base": "http://127.0.0.1:11434/v1",
+    "api_key": "",
+    "model": "",
+    "system_prompt": "只依据明确证据判断风险，证据不足不判违规，只输出约定的 JSON。"
+  },
+  "alert": {
+    "qq": {
+      "enabled": false,
+      "recipient_user_ids": []
+    },
+    "email": {
+      "enabled": false,
+      "smtp_host": "smtp.qq.com",
+      "smtp_port": 465,
+      "smtp_user": "",
+      "smtp_password": "",
+      "sender": "",
+      "recipients": [],
+      "use_ssl": true
+    },
+    "push": {
+      "enabled": false,
+      "serverchan": {
+        "sendkey": "",
+        "api_url": "https://sctapi.ftqq.com/{sendkey}.send"
+      },
+      "pushplus": {
+        "token": "",
+        "api_url": "http://www.pushplus.plus/send"
+      }
+    }
+  },
+  "rules": {
+    "keywords_file": "./rules/keywords.txt",
+    "banned_words_file": "./rules/banned_words.txt",
+    "whitelist_users": [],
+    "alert_cooldown_seconds": 300
+  },
+  "web_panel": {
+    "host": "127.0.0.1",
+    "port": 8080,
+    "access_token": ""
+  },
+  "chat_companion": {
+    "enabled": false,
+    "api_base": "",
+    "api_key": "",
+    "model": "",
+    "system_prompt": "",
+    "bot_name": "小助手",
+    "cooldown_seconds": 30
+  },
+  "marked_users": {
+    "enabled": false
+  },
+  "repeater": {
+    "enabled": false
+  },
+  "poke": {
+    "enabled": false,
+    "proactive": {
+      "enabled": false
+    }
+  }
+}

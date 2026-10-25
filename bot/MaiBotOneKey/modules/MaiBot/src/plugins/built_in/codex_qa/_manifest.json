@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "id": "local.codex-qa",
+  "name": "Codex 独立问答",
+  "description": "以问答指令调用独立模型列表，拦截日常聊天重复回复。",
+  "author": {"name": "本机自建", "url": "https://github.com/MaiM-with-u"},
+  "license": "GPL-v3.0-or-later",
+  "urls": {"repository": "https://github.com/MaiM-with-u/maibot"},
+  "host_application": {"min_version": "1.2.0", "max_version": "1.99.99"},
+  "sdk": {"min_version": "2.0.0", "max_version": "2.99.99"},
+  "dependencies": [],
+  "i18n": {"default_locale": "zh-CN", "supported_locales": ["zh-CN"]},
+  "capabilities": ["send.text", "llm.generate"]
+}

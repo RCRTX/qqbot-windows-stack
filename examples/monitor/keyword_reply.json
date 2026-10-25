@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "groups": [],
+  "rules": [],
+  "mention": false,
+  "cooldown_seconds": 60
+}

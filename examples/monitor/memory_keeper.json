@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "reminders_enabled": false,
+  "groups": [],
+  "api_base": "",
+  "api_key": "",
+  "model": "",
+  "persona_name": "小助手"
+}
