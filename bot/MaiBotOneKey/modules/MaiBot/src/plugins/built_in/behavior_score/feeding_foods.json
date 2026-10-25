@@ -1,0 +1,2050 @@
+[
+  {
+    "name": "白米饭",
+    "category": "主食"
+  },
+  {
+    "name": "糙米饭",
+    "category": "主食"
+  },
+  {
+    "name": "杂粮饭",
+    "category": "主食"
+  },
+  {
+    "name": "小米饭",
+    "category": "主食"
+  },
+  {
+    "name": "紫米饭",
+    "category": "主食"
+  },
+  {
+    "name": "黑米饭",
+    "category": "主食"
+  },
+  {
+    "name": "红豆饭",
+    "category": "主食"
+  },
+  {
+    "name": "绿豆饭",
+    "category": "主食"
+  },
+  {
+    "name": "薏米饭",
+    "category": "主食"
+  },
+  {
+    "name": "蛋炒饭",
+    "category": "主食"
+  },
+  {
+    "name": "扬州炒饭",
+    "category": "主食"
+  },
+  {
+    "name": "酱油炒饭",
+    "category": "主食"
+  },
+  {
+    "name": "菠萝炒饭",
+    "category": "主食"
+  },
+  {
+    "name": "腊肠炒饭",
+    "category": "主食"
+  },
+  {
+    "name": "虾仁炒饭",
+    "category": "主食"
+  },
+  {
+    "name": "咖喱饭",
+    "category": "主食"
+  },
+  {
+    "name": "鸡肉盖饭",
+    "category": "主食"
+  },
+  {
+    "name": "牛肉盖饭",
+    "category": "主食"
+  },
+  {
+    "name": "排骨盖饭",
+    "category": "主食"
+  },
+  {
+    "name": "卤肉饭",
+    "category": "主食"
+  },
+  {
+    "name": "煲仔饭",
+    "category": "主食"
+  },
+  {
+    "name": "八宝饭",
+    "category": "主食"
+  },
+  {
+    "name": "饭团",
+    "category": "主食"
+  },
+  {
+    "name": "寿司",
+    "category": "主食"
+  },
+  {
+    "name": "咸蛋黄粽子",
+    "category": "主食"
+  },
+  {
+    "name": "鲜肉粽",
+    "category": "主食"
+  },
+  {
+    "name": "红枣粽",
+    "category": "主食"
+  },
+  {
+    "name": "豆沙粽",
+    "category": "主食"
+  },
+  {
+    "name": "蒸红薯",
+    "category": "主食"
+  },
+  {
+    "name": "烤红薯",
+    "category": "主食"
+  },
+  {
+    "name": "蒸玉米",
+    "category": "主食"
+  },
+  {
+    "name": "煮玉米",
+    "category": "主食"
+  },
+  {
+    "name": "白粥",
+    "category": "主食"
+  },
+  {
+    "name": "小米粥",
+    "category": "主食"
+  },
+  {
+    "name": "南瓜粥",
+    "category": "主食"
+  },
+  {
+    "name": "皮蛋瘦肉粥",
+    "category": "主食"
+  },
+  {
+    "name": "海鲜粥",
+    "category": "主食"
+  },
+  {
+    "name": "八宝粥",
+    "category": "主食"
+  },
+  {
+    "name": "红豆粥",
+    "category": "主食"
+  },
+  {
+    "name": "山药粥",
+    "category": "主食"
+  },
+  {
+    "name": "馒头",
+    "category": "面食"
+  },
+  {
+    "name": "花卷",
+    "category": "面食"
+  },
+  {
+    "name": "豆沙包",
+    "category": "面食"
+  },
+  {
+    "name": "奶黄包",
+    "category": "面食"
+  },
+  {
+    "name": "叉烧包",
+    "category": "面食"
+  },
+  {
+    "name": "鲜肉包",
+    "category": "面食"
+  },
+  {
+    "name": "香菇青菜包",
+    "category": "面食"
+  },
+  {
+    "name": "小笼包",
+    "category": "面食"
+  },
+  {
+    "name": "生煎包",
+    "category": "面食"
+  },
+  {
+    "name": "灌汤包",
+    "category": "面食"
+  },
+  {
+    "name": "水煎包",
+    "category": "面食"
+  },
+  {
+    "name": "蒸饺",
+    "category": "面食"
+  },
+  {
+    "name": "煎饺",
+    "category": "面食"
+  },
+  {
+    "name": "虾饺",
+    "category": "面食"
+  },
+  {
+    "name": "韭菜鸡蛋饺子",
+    "category": "面食"
+  },
+  {
+    "name": "白菜猪肉饺子",
+    "category": "面食"
+  },
+  {
+    "name": "牛肉饺子",
+    "category": "面食"
+  },
+  {
+    "name": "羊肉饺子",
+    "category": "面食"
+  },
+  {
+    "name": "馄饨",
+    "category": "面食"
+  },
+  {
+    "name": "红油抄手",
+    "category": "面食"
+  },
+  {
+    "name": "阳春面",
+    "category": "面食"
+  },
+  {
+    "name": "葱油拌面",
+    "category": "面食"
+  },
+  {
+    "name": "炸酱面",
+    "category": "面食"
+  },
+  {
+    "name": "牛肉拉面",
+    "category": "面食"
+  },
+  {
+    "name": "兰州拉面",
+    "category": "面食"
+  },
+  {
+    "name": "刀削面",
+    "category": "面食"
+  },
+  {
+    "name": "热干面",
+    "category": "面食"
+  },
+  {
+    "name": "担担面",
+    "category": "面食"
+  },
+  {
+    "name": "重庆小面",
+    "category": "面食"
+  },
+  {
+    "name": "油泼面",
+    "category": "面食"
+  },
+  {
+    "name": "臊子面",
+    "category": "面食"
+  },
+  {
+    "name": "打卤面",
+    "category": "面食"
+  },
+  {
+    "name": "凉面",
+    "category": "面食"
+  },
+  {
+    "name": "炒面",
+    "category": "面食"
+  },
+  {
+    "name": "焖面",
+    "category": "面食"
+  },
+  {
+    "name": "烩面",
+    "category": "面食"
+  },
+  {
+    "name": "竹升面",
+    "category": "面食"
+  },
+  {
+    "name": "车仔面",
+    "category": "面食"
+  },
+  {
+    "name": "乌冬面",
+    "category": "面食"
+  },
+  {
+    "name": "荞麦面",
+    "category": "面食"
+  },
+  {
+    "name": "意大利肉酱面",
+    "category": "面食"
+  },
+  {
+    "name": "番茄意面",
+    "category": "面食"
+  },
+  {
+    "name": "焗意面",
+    "category": "面食"
+  },
+  {
+    "name": "螺蛳粉",
+    "category": "面食"
+  },
+  {
+    "name": "桂林米粉",
+    "category": "面食"
+  },
+  {
+    "name": "过桥米线",
+    "category": "面食"
+  },
+  {
+    "name": "肠粉",
+    "category": "面食"
+  },
+  {
+    "name": "酸辣粉",
+    "category": "面食"
+  },
+  {
+    "name": "河粉",
+    "category": "面食"
+  },
+  {
+    "name": "炒米粉",
+    "category": "面食"
+  },
+  {
+    "name": "红烧肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "东坡肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "回锅肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "糖醋里脊",
+    "category": "肉菜"
+  },
+  {
+    "name": "京酱肉丝",
+    "category": "肉菜"
+  },
+  {
+    "name": "鱼香肉丝",
+    "category": "肉菜"
+  },
+  {
+    "name": "木须肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "蒜泥白肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "小炒肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "粉蒸肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "梅菜扣肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "咕咾肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "盐煎肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "水煮肉片",
+    "category": "肉菜"
+  },
+  {
+    "name": "锅包肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "酱肘子",
+    "category": "肉菜"
+  },
+  {
+    "name": "烤猪蹄",
+    "category": "肉菜"
+  },
+  {
+    "name": "红烧猪蹄",
+    "category": "肉菜"
+  },
+  {
+    "name": "卤猪耳",
+    "category": "肉菜"
+  },
+  {
+    "name": "凉拌猪肚",
+    "category": "肉菜"
+  },
+  {
+    "name": "宫保鸡丁",
+    "category": "肉菜"
+  },
+  {
+    "name": "辣子鸡",
+    "category": "肉菜"
+  },
+  {
+    "name": "白切鸡",
+    "category": "肉菜"
+  },
+  {
+    "name": "口水鸡",
+    "category": "肉菜"
+  },
+  {
+    "name": "叫花鸡",
+    "category": "肉菜"
+  },
+  {
+    "name": "大盘鸡",
+    "category": "肉菜"
+  },
+  {
+    "name": "黄焖鸡",
+    "category": "肉菜"
+  },
+  {
+    "name": "香菇炖鸡",
+    "category": "肉菜"
+  },
+  {
+    "name": "三杯鸡",
+    "category": "肉菜"
+  },
+  {
+    "name": "可乐鸡翅",
+    "category": "肉菜"
+  },
+  {
+    "name": "炸鸡腿",
+    "category": "肉菜"
+  },
+  {
+    "name": "盐焗鸡",
+    "category": "肉菜"
+  },
+  {
+    "name": "手撕鸡",
+    "category": "肉菜"
+  },
+  {
+    "name": "北京烤鸭",
+    "category": "肉菜"
+  },
+  {
+    "name": "啤酒鸭",
+    "category": "肉菜"
+  },
+  {
+    "name": "盐水鸭",
+    "category": "肉菜"
+  },
+  {
+    "name": "姜母鸭",
+    "category": "肉菜"
+  },
+  {
+    "name": "红烧牛肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "土豆炖牛肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "番茄炖牛腩",
+    "category": "肉菜"
+  },
+  {
+    "name": "黑椒牛柳",
+    "category": "肉菜"
+  },
+  {
+    "name": "孜然牛肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "葱爆羊肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "孜然羊肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "红焖羊肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "烤羊腿",
+    "category": "肉菜"
+  },
+  {
+    "name": "手抓羊肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "萝卜炖羊肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "酱牛肉",
+    "category": "肉菜"
+  },
+  {
+    "name": "卤鸭脖",
+    "category": "肉菜"
+  },
+  {
+    "name": "清蒸鲈鱼",
+    "category": "水产"
+  },
+  {
+    "name": "红烧鲤鱼",
+    "category": "水产"
+  },
+  {
+    "name": "糖醋鱼",
+    "category": "水产"
+  },
+  {
+    "name": "松鼠鳜鱼",
+    "category": "水产"
+  },
+  {
+    "name": "酸菜鱼",
+    "category": "水产"
+  },
+  {
+    "name": "水煮鱼",
+    "category": "水产"
+  },
+  {
+    "name": "烤鱼",
+    "category": "水产"
+  },
+  {
+    "name": "剁椒鱼头",
+    "category": "水产"
+  },
+  {
+    "name": "豆豉蒸鱼",
+    "category": "水产"
+  },
+  {
+    "name": "香煎带鱼",
+    "category": "水产"
+  },
+  {
+    "name": "红烧带鱼",
+    "category": "水产"
+  },
+  {
+    "name": "油炸小黄鱼",
+    "category": "水产"
+  },
+  {
+    "name": "香煎鳕鱼",
+    "category": "水产"
+  },
+  {
+    "name": "烤秋刀鱼",
+    "category": "水产"
+  },
+  {
+    "name": "照烧三文鱼",
+    "category": "水产"
+  },
+  {
+    "name": "三文鱼刺身",
+    "category": "水产"
+  },
+  {
+    "name": "鲫鱼豆腐煲",
+    "category": "水产"
+  },
+  {
+    "name": "白灼虾",
+    "category": "水产"
+  },
+  {
+    "name": "油焖大虾",
+    "category": "水产"
+  },
+  {
+    "name": "蒜蓉粉丝虾",
+    "category": "水产"
+  },
+  {
+    "name": "椒盐虾",
+    "category": "水产"
+  },
+  {
+    "name": "盐焗虾",
+    "category": "水产"
+  },
+  {
+    "name": "干锅虾",
+    "category": "水产"
+  },
+  {
+    "name": "清蒸大闸蟹",
+    "category": "水产"
+  },
+  {
+    "name": "香辣蟹",
+    "category": "水产"
+  },
+  {
+    "name": "姜葱炒蟹",
+    "category": "水产"
+  },
+  {
+    "name": "避风塘炒蟹",
+    "category": "水产"
+  },
+  {
+    "name": "蒜蓉蒸扇贝",
+    "category": "水产"
+  },
+  {
+    "name": "粉丝蒸扇贝",
+    "category": "水产"
+  },
+  {
+    "name": "蒜蓉生蚝",
+    "category": "水产"
+  },
+  {
+    "name": "烤生蚝",
+    "category": "水产"
+  },
+  {
+    "name": "辣炒花蛤",
+    "category": "水产"
+  },
+  {
+    "name": "蛤蜊蒸蛋",
+    "category": "水产"
+  },
+  {
+    "name": "清蒸蛏子",
+    "category": "水产"
+  },
+  {
+    "name": "葱爆海参",
+    "category": "水产"
+  },
+  {
+    "name": "鲍鱼捞饭",
+    "category": "水产"
+  },
+  {
+    "name": "红烧鲍鱼",
+    "category": "水产"
+  },
+  {
+    "name": "铁板鱿鱼",
+    "category": "水产"
+  },
+  {
+    "name": "椒盐鱿鱼",
+    "category": "水产"
+  },
+  {
+    "name": "爆炒墨鱼",
+    "category": "水产"
+  },
+  {
+    "name": "清炒小白菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "蒜蓉油麦菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "蚝油生菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "清炒菠菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "蒜蓉西兰花",
+    "category": "蔬菜"
+  },
+  {
+    "name": "凉拌西兰花",
+    "category": "蔬菜"
+  },
+  {
+    "name": "手撕包菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "醋溜白菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "炝炒圆白菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "清炒空心菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "地三鲜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "红烧茄子",
+    "category": "蔬菜"
+  },
+  {
+    "name": "蒜泥茄子",
+    "category": "蔬菜"
+  },
+  {
+    "name": "肉末茄子",
+    "category": "蔬菜"
+  },
+  {
+    "name": "虎皮青椒",
+    "category": "蔬菜"
+  },
+  {
+    "name": "凉拌黄瓜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "拍黄瓜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "清炒苦瓜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "苦瓜炒蛋",
+    "category": "蔬菜"
+  },
+  {
+    "name": "番茄炒蛋",
+    "category": "蔬菜"
+  },
+  {
+    "name": "青椒炒蛋",
+    "category": "蔬菜"
+  },
+  {
+    "name": "香椿炒蛋",
+    "category": "蔬菜"
+  },
+  {
+    "name": "韭菜炒蛋",
+    "category": "蔬菜"
+  },
+  {
+    "name": "蒜薹炒肉",
+    "category": "蔬菜"
+  },
+  {
+    "name": "清炒莴笋",
+    "category": "蔬菜"
+  },
+  {
+    "name": "莴笋炒肉",
+    "category": "蔬菜"
+  },
+  {
+    "name": "清炒山药",
+    "category": "蔬菜"
+  },
+  {
+    "name": "山药炒木耳",
+    "category": "蔬菜"
+  },
+  {
+    "name": "蚝油杏鲍菇",
+    "category": "蔬菜"
+  },
+  {
+    "name": "干煸四季豆",
+    "category": "蔬菜"
+  },
+  {
+    "name": "清炒荷兰豆",
+    "category": "蔬菜"
+  },
+  {
+    "name": "荷塘小炒",
+    "category": "蔬菜"
+  },
+  {
+    "name": "清炒藕片",
+    "category": "蔬菜"
+  },
+  {
+    "name": "酸辣藕丁",
+    "category": "蔬菜"
+  },
+  {
+    "name": "凉拌海带丝",
+    "category": "蔬菜"
+  },
+  {
+    "name": "凉拌木耳",
+    "category": "蔬菜"
+  },
+  {
+    "name": "蒜蓉粉丝娃娃菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "开水白菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "干锅花菜",
+    "category": "蔬菜"
+  },
+  {
+    "name": "麻婆豆腐",
+    "category": "蔬菜"
+  },
+  {
+    "name": "家常豆腐",
+    "category": "蔬菜"
+  },
+  {
+    "name": "蟹黄豆腐",
+    "category": "蔬菜"
+  },
+  {
+    "name": "皮蛋豆腐",
+    "category": "蔬菜"
+  },
+  {
+    "name": "香煎豆腐",
+    "category": "蔬菜"
+  },
+  {
+    "name": "文思豆腐",
+    "category": "蔬菜"
+  },
+  {
+    "name": "紫菜蛋花汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "番茄蛋汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "菠菜蛋汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "黄瓜蛋汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "冬瓜排骨汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "玉米排骨汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "莲藕排骨汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "海带排骨汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "山药排骨汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "萝卜排骨汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "老鸭汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "萝卜老鸭汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "冬瓜老鸭汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "酸萝卜老鸭汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "香菇鸡汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "虫草花鸡汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "花胶鸡汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "人参鸡汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "鲫鱼汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "鲈鱼汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "豆腐鱼汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "蛤蜊汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "鲜虾豆腐汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "三鲜汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "酸辣汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "罗宋汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "奶油蘑菇汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "南瓜浓汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "玉米浓汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "西湖牛肉羹",
+    "category": "汤羹"
+  },
+  {
+    "name": "宋嫂鱼羹",
+    "category": "汤羹"
+  },
+  {
+    "name": "银鱼羹",
+    "category": "汤羹"
+  },
+  {
+    "name": "豆腐羹",
+    "category": "汤羹"
+  },
+  {
+    "name": "肉丸汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "牛肉粉丝汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "羊杂汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "胡辣汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "佛跳墙",
+    "category": "汤羹"
+  },
+  {
+    "name": "排骨菌菇汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "海鲜疙瘩汤",
+    "category": "汤羹"
+  },
+  {
+    "name": "吐司",
+    "category": "点心"
+  },
+  {
+    "name": "牛角包",
+    "category": "点心"
+  },
+  {
+    "name": "法棍",
+    "category": "点心"
+  },
+  {
+    "name": "贝果",
+    "category": "点心"
+  },
+  {
+    "name": "葡式蛋挞",
+    "category": "点心"
+  },
+  {
+    "name": "乳酪蛋挞",
+    "category": "点心"
+  },
+  {
+    "name": "菠萝包",
+    "category": "点心"
+  },
+  {
+    "name": "甜甜圈",
+    "category": "点心"
+  },
+  {
+    "name": "麻薯",
+    "category": "点心"
+  },
+  {
+    "name": "泡芙",
+    "category": "点心"
+  },
+  {
+    "name": "铜锣烧",
+    "category": "点心"
+  },
+  {
+    "name": "华夫饼",
+    "category": "点心"
+  },
+  {
+    "name": "松饼",
+    "category": "点心"
+  },
+  {
+    "name": "舒芙蕾",
+    "category": "点心"
+  },
+  {
+    "name": "千层饼",
+    "category": "点心"
+  },
+  {
+    "name": "葱油饼",
+    "category": "点心"
+  },
+  {
+    "name": "鸡蛋灌饼",
+    "category": "点心"
+  },
+  {
+    "name": "煎饼果子",
+    "category": "点心"
+  },
+  {
+    "name": "手抓饼",
+    "category": "点心"
+  },
+  {
+    "name": "肉夹馍",
+    "category": "点心"
+  },
+  {
+    "name": "驴肉火烧",
+    "category": "点心"
+  },
+  {
+    "name": "油条",
+    "category": "点心"
+  },
+  {
+    "name": "麻团",
+    "category": "点心"
+  },
+  {
+    "name": "芝麻烧饼",
+    "category": "点心"
+  },
+  {
+    "name": "黄桥烧饼",
+    "category": "点心"
+  },
+  {
+    "name": "老婆饼",
+    "category": "点心"
+  },
+  {
+    "name": "绿豆饼",
+    "category": "点心"
+  },
+  {
+    "name": "绿豆糕",
+    "category": "点心"
+  },
+  {
+    "name": "桂花糕",
+    "category": "点心"
+  },
+  {
+    "name": "马蹄糕",
+    "category": "点心"
+  },
+  {
+    "name": "萝卜糕",
+    "category": "点心"
+  },
+  {
+    "name": "芋头糕",
+    "category": "点心"
+  },
+  {
+    "name": "松糕",
+    "category": "点心"
+  },
+  {
+    "name": "发糕",
+    "category": "点心"
+  },
+  {
+    "name": "米糕",
+    "category": "点心"
+  },
+  {
+    "name": "艾窝窝",
+    "category": "点心"
+  },
+  {
+    "name": "豌豆黄",
+    "category": "点心"
+  },
+  {
+    "name": "驴打滚",
+    "category": "点心"
+  },
+  {
+    "name": "糖油粑粑",
+    "category": "点心"
+  },
+  {
+    "name": "炸春卷",
+    "category": "点心"
+  },
+  {
+    "name": "鲜肉月饼",
+    "category": "点心"
+  },
+  {
+    "name": "蛋黄月饼",
+    "category": "点心"
+  },
+  {
+    "name": "五仁月饼",
+    "category": "点心"
+  },
+  {
+    "name": "莲蓉月饼",
+    "category": "点心"
+  },
+  {
+    "name": "红糖糍粑",
+    "category": "点心"
+  },
+  {
+    "name": "蛋黄酥",
+    "category": "点心"
+  },
+  {
+    "name": "桃酥",
+    "category": "点心"
+  },
+  {
+    "name": "蟹壳黄",
+    "category": "点心"
+  },
+  {
+    "name": "双皮奶",
+    "category": "甜品"
+  },
+  {
+    "name": "姜撞奶",
+    "category": "甜品"
+  },
+  {
+    "name": "龟苓膏",
+    "category": "甜品"
+  },
+  {
+    "name": "烧仙草",
+    "category": "甜品"
+  },
+  {
+    "name": "芒果班戟",
+    "category": "甜品"
+  },
+  {
+    "name": "芒果西米露",
+    "category": "甜品"
+  },
+  {
+    "name": "杨枝甘露",
+    "category": "甜品"
+  },
+  {
+    "name": "红豆沙",
+    "category": "甜品"
+  },
+  {
+    "name": "绿豆沙",
+    "category": "甜品"
+  },
+  {
+    "name": "莲子羹",
+    "category": "甜品"
+  },
+  {
+    "name": "银耳羹",
+    "category": "甜品"
+  },
+  {
+    "name": "桃胶羹",
+    "category": "甜品"
+  },
+  {
+    "name": "酒酿圆子",
+    "category": "甜品"
+  },
+  {
+    "name": "芝麻汤圆",
+    "category": "甜品"
+  },
+  {
+    "name": "花生汤圆",
+    "category": "甜品"
+  },
+  {
+    "name": "豆沙汤圆",
+    "category": "甜品"
+  },
+  {
+    "name": "水果捞",
+    "category": "甜品"
+  },
+  {
+    "name": "杏仁豆腐",
+    "category": "甜品"
+  },
+  {
+    "name": "焦糖布丁",
+    "category": "甜品"
+  },
+  {
+    "name": "鸡蛋布丁",
+    "category": "甜品"
+  },
+  {
+    "name": "芒果布丁",
+    "category": "甜品"
+  },
+  {
+    "name": "牛奶布丁",
+    "category": "甜品"
+  },
+  {
+    "name": "提拉米苏",
+    "category": "甜品"
+  },
+  {
+    "name": "草莓蛋糕",
+    "category": "甜品"
+  },
+  {
+    "name": "巧克力蛋糕",
+    "category": "甜品"
+  },
+  {
+    "name": "抹茶蛋糕",
+    "category": "甜品"
+  },
+  {
+    "name": "芝士蛋糕",
+    "category": "甜品"
+  },
+  {
+    "name": "黑森林蛋糕",
+    "category": "甜品"
+  },
+  {
+    "name": "红丝绒蛋糕",
+    "category": "甜品"
+  },
+  {
+    "name": "拿破仑蛋糕",
+    "category": "甜品"
+  },
+  {
+    "name": "冰淇淋",
+    "category": "甜品"
+  },
+  {
+    "name": "冰棒",
+    "category": "甜品"
+  },
+  {
+    "name": "刨冰",
+    "category": "甜品"
+  },
+  {
+    "name": "绵绵冰",
+    "category": "甜品"
+  },
+  {
+    "name": "冰粉",
+    "category": "甜品"
+  },
+  {
+    "name": "凉虾",
+    "category": "甜品"
+  },
+  {
+    "name": "酸奶碗",
+    "category": "甜品"
+  },
+  {
+    "name": "木糠杯",
+    "category": "甜品"
+  },
+  {
+    "name": "巧克力慕斯",
+    "category": "甜品"
+  },
+  {
+    "name": "草莓慕斯",
+    "category": "甜品"
+  },
+  {
+    "name": "苹果",
+    "category": "水果"
+  },
+  {
+    "name": "香蕉",
+    "category": "水果"
+  },
+  {
+    "name": "梨",
+    "category": "水果"
+  },
+  {
+    "name": "橙子",
+    "category": "水果"
+  },
+  {
+    "name": "橘子",
+    "category": "水果"
+  },
+  {
+    "name": "柚子",
+    "category": "水果"
+  },
+  {
+    "name": "葡萄",
+    "category": "水果"
+  },
+  {
+    "name": "青提",
+    "category": "水果"
+  },
+  {
+    "name": "红提",
+    "category": "水果"
+  },
+  {
+    "name": "草莓",
+    "category": "水果"
+  },
+  {
+    "name": "蓝莓",
+    "category": "水果"
+  },
+  {
+    "name": "树莓",
+    "category": "水果"
+  },
+  {
+    "name": "黑莓",
+    "category": "水果"
+  },
+  {
+    "name": "桑葚",
+    "category": "水果"
+  },
+  {
+    "name": "樱桃",
+    "category": "水果"
+  },
+  {
+    "name": "水蜜桃",
+    "category": "水果"
+  },
+  {
+    "name": "油桃",
+    "category": "水果"
+  },
+  {
+    "name": "黄桃",
+    "category": "水果"
+  },
+  {
+    "name": "蟠桃",
+    "category": "水果"
+  },
+  {
+    "name": "李子",
+    "category": "水果"
+  },
+  {
+    "name": "杏子",
+    "category": "水果"
+  },
+  {
+    "name": "枇杷",
+    "category": "水果"
+  },
+  {
+    "name": "杨梅",
+    "category": "水果"
+  },
+  {
+    "name": "荔枝",
+    "category": "水果"
+  },
+  {
+    "name": "龙眼",
+    "category": "水果"
+  },
+  {
+    "name": "芒果",
+    "category": "水果"
+  },
+  {
+    "name": "菠萝",
+    "category": "水果"
+  },
+  {
+    "name": "菠萝蜜",
+    "category": "水果"
+  },
+  {
+    "name": "榴莲",
+    "category": "水果"
+  },
+  {
+    "name": "山竹",
+    "category": "水果"
+  },
+  {
+    "name": "椰子",
+    "category": "水果"
+  },
+  {
+    "name": "木瓜",
+    "category": "水果"
+  },
+  {
+    "name": "番石榴",
+    "category": "水果"
+  },
+  {
+    "name": "百香果",
+    "category": "水果"
+  },
+  {
+    "name": "火龙果",
+    "category": "水果"
+  },
+  {
+    "name": "猕猴桃",
+    "category": "水果"
+  },
+  {
+    "name": "西瓜",
+    "category": "水果"
+  },
+  {
+    "name": "哈密瓜",
+    "category": "水果"
+  },
+  {
+    "name": "香瓜",
+    "category": "水果"
+  },
+  {
+    "name": "石榴",
+    "category": "水果"
+  },
+  {
+    "name": "无花果",
+    "category": "水果"
+  },
+  {
+    "name": "柿子",
+    "category": "水果"
+  },
+  {
+    "name": "冬枣",
+    "category": "水果"
+  },
+  {
+    "name": "山楂",
+    "category": "水果"
+  },
+  {
+    "name": "海棠果",
+    "category": "水果"
+  },
+  {
+    "name": "人参果",
+    "category": "水果"
+  },
+  {
+    "name": "莲雾",
+    "category": "水果"
+  },
+  {
+    "name": "蛇皮果",
+    "category": "水果"
+  },
+  {
+    "name": "红毛丹",
+    "category": "水果"
+  },
+  {
+    "name": "温牛奶",
+    "category": "饮品"
+  },
+  {
+    "name": "酸奶",
+    "category": "饮品"
+  },
+  {
+    "name": "豆浆",
+    "category": "饮品"
+  },
+  {
+    "name": "黑豆浆",
+    "category": "饮品"
+  },
+  {
+    "name": "米浆",
+    "category": "饮品"
+  },
+  {
+    "name": "燕麦奶",
+    "category": "饮品"
+  },
+  {
+    "name": "椰奶",
+    "category": "饮品"
+  },
+  {
+    "name": "杏仁奶",
+    "category": "饮品"
+  },
+  {
+    "name": "花生奶",
+    "category": "饮品"
+  },
+  {
+    "name": "红茶",
+    "category": "饮品"
+  },
+  {
+    "name": "绿茶",
+    "category": "饮品"
+  },
+  {
+    "name": "乌龙茶",
+    "category": "饮品"
+  },
+  {
+    "name": "普洱茶",
+    "category": "饮品"
+  },
+  {
+    "name": "茉莉花茶",
+    "category": "饮品"
+  },
+  {
+    "name": "菊花茶",
+    "category": "饮品"
+  },
+  {
+    "name": "桂花茶",
+    "category": "饮品"
+  },
+  {
+    "name": "玫瑰花茶",
+    "category": "饮品"
+  },
+  {
+    "name": "大麦茶",
+    "category": "饮品"
+  },
+  {
+    "name": "荞麦茶",
+    "category": "饮品"
+  },
+  {
+    "name": "柠檬水",
+    "category": "饮品"
+  },
+  {
+    "name": "柠檬红茶",
+    "category": "饮品"
+  },
+  {
+    "name": "蜂蜜水",
+    "category": "饮品"
+  },
+  {
+    "name": "蜂蜜柚子茶",
+    "category": "饮品"
+  },
+  {
+    "name": "酸梅汤",
+    "category": "饮品"
+  },
+  {
+    "name": "绿豆汤",
+    "category": "饮品"
+  },
+  {
+    "name": "冰糖雪梨",
+    "category": "饮品"
+  },
+  {
+    "name": "银耳雪梨饮",
+    "category": "饮品"
+  },
+  {
+    "name": "鲜榨橙汁",
+    "category": "饮品"
+  },
+  {
+    "name": "鲜榨苹果汁",
+    "category": "饮品"
+  },
+  {
+    "name": "鲜榨西瓜汁",
+    "category": "饮品"
+  },
+  {
+    "name": "胡萝卜汁",
+    "category": "饮品"
+  },
+  {
+    "name": "番茄汁",
+    "category": "饮品"
+  },
+  {
+    "name": "甘蔗汁",
+    "category": "饮品"
+  },
+  {
+    "name": "椰子水",
+    "category": "饮品"
+  },
+  {
+    "name": "芒果汁",
+    "category": "饮品"
+  },
+  {
+    "name": "葡萄汁",
+    "category": "饮品"
+  },
+  {
+    "name": "热可可",
+    "category": "饮品"
+  },
+  {
+    "name": "拿铁",
+    "category": "饮品"
+  },
+  {
+    "name": "卡布奇诺",
+    "category": "饮品"
+  },
+  {
+    "name": "美式咖啡",
+    "category": "饮品"
+  },
+  {
+    "name": "摩卡",
+    "category": "饮品"
+  },
+  {
+    "name": "珍珠奶茶",
+    "category": "饮品"
+  },
+  {
+    "name": "椰果奶茶",
+    "category": "饮品"
+  },
+  {
+    "name": "奶盖茶",
+    "category": "饮品"
+  },
+  {
+    "name": "水果茶",
+    "category": "饮品"
+  },
+  {
+    "name": "苏打水",
+    "category": "饮品"
+  },
+  {
+    "name": "汽水",
+    "category": "饮品"
+  },
+  {
+    "name": "格瓦斯",
+    "category": "饮品"
+  },
+  {
+    "name": "红枣枸杞茶",
+    "category": "饮品"
+  },
+  {
+    "name": "薯片",
+    "category": "零食"
+  },
+  {
+    "name": "薯条",
+    "category": "零食"
+  },
+  {
+    "name": "虾条",
+    "category": "零食"
+  },
+  {
+    "name": "虾片",
+    "category": "零食"
+  },
+  {
+    "name": "锅巴",
+    "category": "零食"
+  },
+  {
+    "name": "爆米花",
+    "category": "零食"
+  },
+  {
+    "name": "仙贝",
+    "category": "零食"
+  },
+  {
+    "name": "雪饼",
+    "category": "零食"
+  },
+  {
+    "name": "海苔",
+    "category": "零食"
+  },
+  {
+    "name": "紫菜卷",
+    "category": "零食"
+  },
+  {
+    "name": "烤鱼片",
+    "category": "零食"
+  },
+  {
+    "name": "鱿鱼丝",
+    "category": "零食"
+  },
+  {
+    "name": "牛肉干",
+    "category": "零食"
+  },
+  {
+    "name": "猪肉脯",
+    "category": "零食"
+  },
+  {
+    "name": "肉松",
+    "category": "零食"
+  },
+  {
+    "name": "鸡肉干",
+    "category": "零食"
+  },
+  {
+    "name": "豆干",
+    "category": "零食"
+  },
+  {
+    "name": "辣条",
+    "category": "零食"
+  },
+  {
+    "name": "麻辣蚕豆",
+    "category": "零食"
+  },
+  {
+    "name": "怪味胡豆",
+    "category": "零食"
+  },
+  {
+    "name": "五香花生",
+    "category": "零食"
+  },
+  {
+    "name": "盐焗花生",
+    "category": "零食"
+  },
+  {
+    "name": "瓜子",
+    "category": "零食"
+  },
+  {
+    "name": "南瓜子",
+    "category": "零食"
+  },
+  {
+    "name": "开心果",
+    "category": "零食"
+  },
+  {
+    "name": "腰果",
+    "category": "零食"
+  },
+  {
+    "name": "榛子",
+    "category": "零食"
+  },
+  {
+    "name": "核桃",
+    "category": "零食"
+  },
+  {
+    "name": "松子",
+    "category": "零食"
+  },
+  {
+    "name": "碧根果",
+    "category": "零食"
+  },
+  {
+    "name": "夏威夷果",
+    "category": "零食"
+  },
+  {
+    "name": "巴旦木",
+    "category": "零食"
+  },
+  {
+    "name": "板栗",
+    "category": "零食"
+  },
+  {
+    "name": "葡萄干",
+    "category": "零食"
+  },
+  {
+    "name": "芒果干",
+    "category": "零食"
+  },
+  {
+    "name": "草莓干",
+    "category": "零食"
+  },
+  {
+    "name": "蔓越莓干",
+    "category": "零食"
+  },
+  {
+    "name": "无花果干",
+    "category": "零食"
+  },
+  {
+    "name": "山楂片",
+    "category": "零食"
+  },
+  {
+    "name": "果丹皮",
+    "category": "零食"
+  },
+  {
+    "name": "蜜饯",
+    "category": "零食"
+  },
+  {
+    "name": "话梅",
+    "category": "零食"
+  },
+  {
+    "name": "陈皮糖",
+    "category": "零食"
+  },
+  {
+    "name": "花生糖",
+    "category": "零食"
+  },
+  {
+    "name": "芝麻糖",
+    "category": "零食"
+  },
+  {
+    "name": "牛轧糖",
+    "category": "零食"
+  },
+  {
+    "name": "奶糖",
+    "category": "零食"
+  },
+  {
+    "name": "水果糖",
+    "category": "零食"
+  },
+  {
+    "name": "软糖",
+    "category": "零食"
+  },
+  {
+    "name": "巧克力",
+    "category": "零食"
+  },
+  {
+    "name": "威化饼干",
+    "category": "零食"
+  },
+  {
+    "name": "苏打饼干",
+    "category": "零食"
+  },
+  {
+    "name": "曲奇饼干",
+    "category": "零食"
+  },
+  {
+    "name": "蛋卷",
+    "category": "零食"
+  },
+  {
+    "name": "蛋白棒",
+    "category": "零食"
+  },
+  {
+    "name": "谷物棒",
+    "category": "零食"
+  },
+  {
+    "name": "冻干酸奶块",
+    "category": "零食"
+  },
+  {
+    "name": "溶豆",
+    "category": "零食"
+  },
+  {
+    "name": "山楂糕",
+    "category": "零食"
+  },
+  {
+    "name": "米花糖",
+    "category": "零食"
+  },
+  {
+    "name": "猫条",
+    "category": "猫咪零食"
+  }
+]

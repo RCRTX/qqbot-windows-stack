@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "本地好感度与表现分 (Local Behavior Score)",
+  "description": "按人记好感度、按表现分奖惩，把语气偏好注入回复提示词。0.11 自建插件 behavior_score 的 1.2.5 移植版。",
+  "author": {
+    "name": "本机自建（非上游）",
+    "url": "https://github.com/MaiM-with-u"
+  },
+  "license": "GPL-v3.0-or-later",
+  "urls": {
+    "repository": "https://github.com/MaiM-with-u/maibot",
+    "homepage": "https://github.com/MaiM-with-u/maibot",
+    "documentation": "https://github.com/MaiM-with-u/maibot",
+    "issues": "https://github.com/MaiM-with-u/maibot/issues"
+  },
+  "host_application": {
+    "min_version": "1.2.0",
+    "max_version": "1.99.99"
+  },
+  "sdk": {
+    "min_version": "2.0.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "supported_locales": [
+      "zh-CN"
+    ]
+  },
+  "capabilities": [
+    "send.text",
+    "send.image",
+    "send.emoji",
+    "llm.generate",
+    "person.get_id",
+    "config.get",
+    "emoji.get_random",
+    "emoji.delete"
+  ],
+  "id": "local.behavior-score"
+}

@@ -1,187 +1,124 @@
-<a id="-双语--bilingual"></a>
+# QQBot Windows Stack
 
-<div align="center">
+一套 Windows 原生 QQ 机器人源码集成：**群聊记录与审核 + MaiBot AI 聊天 + 统一管理控制台**。
 
-  <!-- Language Switcher -->
-  <a href="#-双语--bilingual">双语 / Bilingual</a> | <a href="docs/README_CN.md">中文</a> | <a href="docs/README_EN.md">English</a>
+适合希望在自己的 Windows 电脑上管理 QQ 群、查历史消息、接入大模型聊天，并保留本地数据的使用者。它是从实际运行项目整理的源码发布版，包含定制的 MaiBot 源码与插件。QQ 客户端、SnowLuma、Python 运行时和模型服务需要自行准备。
 
-  <br>
+## 能做什么
 
-  <h1>麦麦 MaiBot</h1>
+| 组件 | 用途 |
+|---|---|
+| `qq-monitor` | 收集指定群的消息、本地保存与检索；关键词规则、可选 AI 审核、违规告警与人工复核；数据导出。默认不自动清理聊天记录。 |
+| `panel` | 查看服务状态和日志，管理监控群、发言群、规则、模型/API 与 MaiBot 配置；浏览消息、告警和记忆。 |
+| `bot/MaiBotOneKey/modules/MaiBot` | 定制 MaiBot 聊天核心：群聊/私聊、大模型调用、图像理解、记忆与插件。需配置自己的模型与机器人账号。 |
+| MaiBot 插件 | SnowLuma OneBot 接入，以及联网搜索、娱乐、语音等可选扩展。外部服务可能另需依赖、密钥或素材。 |
 
-  <!-- Badges Row -->
-  <p>
-    <img src="https://img.shields.io/badge/Python-3.12+-blue" alt="Python Version">
-    <img src="https://img.shields.io/github/license/Mai-with-u/MaiBot?label=License" alt="License">
-    <img src="https://img.shields.io/github/contributors/Mai-with-u/MaiBot.svg?style=flat&label=Contributors" alt="Contributors">
-    <img src="https://img.shields.io/github/forks/Mai-with-u/MaiBot.svg?style=flat&label=Forks" alt="Forks">
-    <img src="https://img.shields.io/github/stars/Mai-with-u/MaiBot?style=flat&label=Stars" alt="Stars">
-    <br>
-    <a href="https://trendshift.io/repositories/20445" target="_blank"><img src="https://trendshift.io/api/badge/repositories/20445" alt="Mai-with-u%2FMaiBot | Trendshift" width="250" height="55"></a>
-  </p>
-</div>
+可以只运行监控与控制台。AI 审核、主动发言、语音和娱乐等能力均应在完成对应配置后启用；本仓库不附带作者的聊天记录、人物关系、账号、API 密钥或模型账号登录态。
 
-<br>
+## 工作方式
 
-<!-- Mascot on the Right (Float) -->
-<img src="depends-data/maimai-v2.png" align="right" width="40%" alt="MaiBot Character" style="margin-left: 20px; margin-bottom: 20px;">
+```mermaid
+flowchart LR
+    QQ[Windows QQ / 专用机器人账号] --> S[SnowLuma / OneBot v11]
+    S -->|HTTP 3000 / WS 3001| M[qq-monitor :8080]
+    S -->|WS 3001| B[MaiBot :8000 / :8001]
+    P[统一控制台 :8090] --> M
+    P --> B
+    M --> D[本地数据与导出]
+    B --> L[你配置的大模型 / Embedding]
+```
 
-<a id="english"></a>
+## 快速开始（Windows）
 
-## INTRO
+### 1. 准备环境
 
-麦麦 MaiSaka 是一个基于大语言模型的可交互智能体。  
+- Windows 10/11，64 位 **Python 3.12**，安装时启用 Python Launcher（`py`）。
+- 下载本仓库 ZIP 并解压，或执行：
 
-MaiSaka 不仅仅是一个机器人，不仅仅是一个可以帮你完成任务的“有帮助的助手”，她还是一个致力于了解你，并以真实人类的风格进行交互的数字生命。她不追求完美，不追求高效，但追求亲切和真实。  
-<sub><sup>MaiSaka is an interactive agent based on large language models. MaiSaka is more than just a bot, and more than a "helpful assistant" that completes tasks. She is a digital life form that tries to understand you and interact in a genuinely human style. She does not pursue perfection or efficiency above all else. She pursues warmth and authenticity.</sup></sub>
+  ```powershell
+  git clone https://github.com/RCRTX/qqbot-windows-stack.git
+  cd qqbot-windows-stack
+  ```
 
-- 💭 **没有人喜欢 GPT 的语言风格**：麦麦使用了更加自然、贴合人类对话习惯的交互方式，不是长篇大论或者 markdown 格式的分点，而是或长或短的闲谈。  
-  <sub><sup><strong>No one likes GPT-sounding dialogue</strong>: MaiSaka uses a more natural conversational style. Instead of long-winded markdown-heavy replies, she chats in a way that feels casual, varied, and human.</sup></sub>
-- 🎭 **不再是傻乎乎的一问一答**：懂得在合适的时间说话，把握聊天中的气氛，在合适的时候开口，在合适的时候闭嘴。  
-  <sub><sup><strong>No longer stuck in rigid Q&A</strong>: She knows when to speak, how to read the room, when to join a conversation, and when to stay quiet.</sup></sub>
-- 🧠 **麦麦·成为人类**：在多人对话中，麦麦会模仿其他人的说话风格，还会自主理解新词或者小圈子里的黑话，不断进化。  
-  <sub><sup><strong>MaiSaka becoming human</strong>: In group conversations, MaiSaka imitates how people around her speak, learns new slang and in-group language, and keeps evolving.</sup></sub>
-- ❤️ **永远都在更加了解你**：基于心理学中人格理论，麦麦会不断积累对于你的了解，不论是你的信息、喜恶或是行为风格，她都记在心里。  
-  <sub><sup><strong>Always learning more about you</strong>: Inspired by personality theory in psychology, MaiSaka gradually builds an understanding of your preferences, traits, habits, and behavior style.</sup></sub>
-- 🔌 **插件系统**：提供强大的 API 和事件系统，拥有无限扩展可能。  
-  <sub><sup><strong>Plugin system</strong>: Provides powerful APIs and an event system with virtually unlimited room for extension.</sup></sub>
+- 准备 QQ 专用账号和 [SnowLuma](https://github.com/SnowLuma/SnowLuma)，按其[官方文档](https://snowluma.github.io/en/docs/guide/introduction)完成安装、登录和接入。为该账号开放 OneBot v11 **HTTP `127.0.0.1:3000`**、**正向 WebSocket `127.0.0.1:3001`**，设置自己的 access token。
+- 只选择需要接入的机器人账号。本发布版启动器不会替你注入、登录或关闭 QQ，也不会安装外部桥接程序。
 
-<div align="center">
-  <br>
-  <img src="depends-data/webui-showcase.jpg" width="90%" alt="MaiBot WebUI 界面" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</div>
+### 2. 安装依赖并生成配置
 
----
+在仓库目录打开 PowerShell：
 
-<a id="-更新和安装--updates-and-installation"></a>
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe tools/setup.py
+```
 
-## 安装 · INSTALL
+也可以双击 `setup.bat`。生成器只创建缺失配置，保留已存在的文件。配置文件、数据库、日志、虚拟环境都已加入 `.gitignore`。
 
-**最新版本: v1.2.5**
+### 3. 填写自己的配置
 
-<sub><sup><strong>Latest Version: v1.2.5</strong></sup></sub>
+编辑 `qq-monitor/config/config.win.json`：
 
-- **发布**：[Release](https://github.com/Mai-with-u/MaiBot/releases/) 页面展示了最新发布的正式版。
-  <sub><sup><strong>Download</strong>: Visit the <a href="https://github.com/Mai-with-u/MaiBot/releases/">Release</a> page to get the latest version.</sup></sub>
+- OneBot HTTP / WebSocket 地址与 access token，与 SnowLuma 一致。
+- 机器人 QQ、需要监控的群号、告警接收人。**初始群列表为空**，需要自行选择。
+- 数据/导出路径；默认使用仓库内的本地目录。
+- 若要 AI 审核，再配置兼容的 API 地址、密钥、模型名称并启用相关开关。
 
-- **[部署教程](https://docs.mai-mai.org/manual/deployment/)**  
-<sub><sup>Deployment Guide</sup></sub>
+详细字段及可选功能见 [配置说明](docs/CONFIGURATION.md)。不要把填好的真实配置提交到公开仓库。
 
-- **方便使用的麦麦启动器下载 (Windows/MAC)**：[Maibot-OK](https://github.com/Mai-with-u/MaiBotOneKey/releases/)  
-  <sub><sup><strong>Launcher</strong>: <a href="https://github.com/Mai-with-u/MaiBotOneKey/releases/">Maibot OneKey</a></sup></sub>
+### 4. 启动和访问
 
+先让 QQ 与 SnowLuma 的 OneBot 接口正常运行，然后双击 `start.bat`，或执行：
 
-| 分支 / Branch ||
-| :--- | :--- |
-| `main` | **稳定版 · STABLE** |
-| `dev` | 开发版，包含开发中的新功能 · DEV|
+```powershell
+.\.venv\Scripts\python.exe tools/stack.py start
+.\.venv\Scripts\python.exe tools/stack.py status
+```
 
----
+- 统一控制台：<http://127.0.0.1:8090>
+- 监控面板：<http://127.0.0.1:8080>
+- 停止本仓库启动的服务：双击 `stop.bat` 或 `python tools/stack.py stop`。
 
-## 📚 文档 · DOC
+默认启动监控与控制台。启动器会检查端口占用，避免把别的实例当成本实例；不会按 QQ 进程名执行结束操作。请从资源管理器双击启动，避免在生命周期受限的 AI 终端里托管长期服务。
 
-- **[📚 麦麦文档](https://docs.mai-mai.org)**：最全面的文档中心，了解麦麦的一切。  
-  <sub><sup><strong><a href="https://docs.mai-mai.org">📚 Documentation</a></strong>: The most comprehensive documentation hub for everything about MaiSaka.</sup></sub>
+### 5. 可选：启用 MaiBot 聊天
 
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r bot/MaiBotOneKey/modules/MaiBot/requirements.txt
+.\.venv\Scripts\python.exe tools/setup.py --with-bot
+```
 
-- **[演示视频]**
-<div>
-  <a href="https://www.bilibili.com/video/BV1amAneGE3P" target="_blank">
-    <picture>
-      <source media="(max-width: 600px)" srcset="depends-data/video.png" width="100%">
-      <img src="depends-data/video.png" width="40%" alt="麦麦演示视频" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(2, 1, 1, 0.1);">
-    </picture>
-    <br>
-    <small>前往麦麦演示视频 / Watch the MaiSaka video</small>
-  </a>
-</div>
+按照 [MaiBot 源码说明](bot/MaiBotOneKey/README.md)生成/编辑机器人配置与模型配置，设置自己的回复、决策、识图和 embedding 模型；将 `snowluma-adapter` 插件的连接地址、令牌和账号与 SnowLuma 对齐。模型名以你实际 API 提供商支持的名称为准。
 
----
+完成后运行：
 
-## 💬 讨论与社区 · Discussion/Community
+```powershell
+.\.venv\Scripts\python.exe tools/stack.py start --with-bot
+```
 
-| 群组 / Group | 说明 / Description |
-| :--- | :--- |
-| 麦麦脑电图:571780722<br><sub><sup>MaiBrain EEG</sup></sub> | 技术交流 / 答疑<br><sub><sup>Technical discussion / Q&A</sup></sub> |
-| 麦麦大脑磁共振:766798517<br><sub><sup>MaiBrain MRI</sup></sub> | 技术交流 / 答疑<br><sub><sup>Technical discussion / Q&A</sup></sub> |
-| [麦麦要当 VTB](https://qm.qq.com/q/wGePTl1UyY)<br><sub><sup>Mai Wants to Be a VTuber</sup></sub> | 技术交流 / 答疑<br><sub><sup>Technical discussion / Q&A</sup></sub> |
- | [麦麦闲聊群](https://qm.qq.com/q/JxvHZnxyec)<br><sub><sup>Mai Casual Chat Group</sup></sub> | 以闲聊为主<br><sub><sup>Casual chat only, no support</sup></sub> |
-| 插件开发群:1036092828<br><sub><sup>Plugin Dev Group</sup></sub> | 插件、进阶开发与测试<br><sub><sup>Advanced development and testing</sup></sub> |
+这是源码分发版，未附带原一键包的便携运行时与作者的模型路由。启用聊天前还需接受/确认上游 MaiBot 要求的配置与条款；插件额外依赖按对应说明安装。
 
----
+## 常见问题
 
+- **端口被占用**：先用 `tools/stack.py status` 查看。不要同时启动另一套使用 3000/3001/8000/8001/8080/8090 的机器人栈。
+- **QQ 重启后不回话**：先到 SnowLuma 确认专用机器人账号仍已接入。再查看 MaiBot 日志是否出现 OneBot WebSocket 连接成功。仅端口能连通不代表消息已发到 QQ。
+- **监控群为空**：初次安装不会自动订阅作者的群。请在监控配置或控制台里填写自己的群号并重启对应服务。
+- **模型报 401/402/429**：检查自己的密钥、余额、模型权限与限流；聊天、审核、记忆 embedding 是不同调用，某一项正常不代表其他项也正常。
+- **本机 API 连接失败**：本地请求应直连。启动器会向已有 `NO_PROXY/no_proxy` 追加 `127.0.0.1,localhost,::1`。
+- **面板里某项功能缺素材/外部服务**：仓库未提供私有图片、语音模型、浏览器 Cookie 或商业服务密钥；按插件说明准备，或保留关闭状态。
 
-## 🧩 衍生项目 · Related Projects
-<sub><sup></sup></sub>
+更多信息见 [运行与排障](docs/OPERATIONS.md)、[发布范围与验证](docs/RELEASE.md)。
 
-- **[Amaidesu](https://github.com/MaiM-with-u/Amaidesu)**：让麦麦在 B 站开播。  
-  <sub><sup>Let MaiSaka stream on Bilibili.</sup></sub>
-- **[MoFox_Bot](https://github.com/MoFox-Studio/MoFox-Core)**：基于 MaiCore 0.10.0 的 Fork。  
-  <sub><sup>An enhanced fork based on MaiCore 0.10.0.</sup></sub>
-- **[MaiCraft](https://github.com/MaiM-with-u/Maicraft)**：让麦麦陪你玩 Minecraft（暂时停止维护中）。  
-  <sub><sup>Let MaiSaka accompany you in Minecraft (currently paused).</sup></sub>
+## Fork 与分支
 
----
+本仓库是官方 [MaiBot](https://github.com/Mai-with-u/MaiBot) 的 Fork，默认分支为 **`windows-stack`**，用于发布完整 Windows 机器人栈。`main` 保留创建 Fork 时的官方源码；本发行版的定制核心位于 `bot/MaiBotOneKey/modules/MaiBot/`，因此目录结构与官方根目录不同。
 
-## 💡 设计理念 · IDEA
+更新本发行版请使用 `git pull --ff-only origin windows-stack`。不要把官方 `main` 直接覆盖到本发行版目录。后续引入官方更新时，应先在独立分支处理核心修改与集成路径，并验证后再合并。
 
-> **千石可乐说：**  
-> <sub><sup><strong>SengokuCola:</strong></sup></sub>
-> - 这个项目最初只是为了给牛牛 bot 添加一点额外的功能，但是功能越写越多，最后决定重写。其目的是为了创造一个活跃在 QQ 群聊的“生命体”。目的并不是为了写一个功能齐全的机器人，而是一个尽可能让人感知到真实的类人存在。  
->   <sub><sup>This project originally started as a few extra features for the NiuNiu bot, but it kept growing until a full rewrite became inevitable. The goal was to create a "life form" active in QQ group chats, not a feature-complete bot, but something as human-like and real-feeling as possible.</sup></sub>
-> - 程序的功能设计理念基于一个核心的原则：“最像而不是好”。  
->   <sub><sup>The core design principle is: "more lifelike, not merely better."</sup></sub>
-> - 如果人类真的需要一个 AI 来陪伴自己，并不是所有人都需要一个完美的，能解决所有问题的“helpful assistant”，而是一个会犯错的，拥有自己感知和想法的“生命形式”。  
->   <sub><sup>If people truly want AI companionship, not everyone needs a perfect "helpful assistant" that solves every problem. Some people may want a life form that can make mistakes and has its own perceptions and thoughts.</sup></sub>
+关联 Fork 前的独立仓库及原 `v1.0.0` Release 保存在 [独立仓库备份](https://github.com/RCRTX/qqbot-windows-stack-standalone-backup)。本 Fork 的 Windows 栈 Release 使用 `windows-stack-v1.0.0` 等带前缀标签，与上游版本区分。
 
----
+## 源码与许可证
 
-## 🌟 贡献和致谢 · Contributors
+本项目包含定制的 [MaiBot](https://github.com/Mai-with-u/MaiBot) 与 [MaiBotOneKey](https://github.com/DrSmoothl/MaiBotOneKey) 源码，保留各自 GPL-3.0 许可证与署名。集成及新增代码以 GPL-3.0 发布。Dashboard 等子目录另有 AGPL-3.0 声明；A_memorix 同时保留原许可及 MaiBot 特别授权，不能将全部文件视为同一许可。详情见 [第三方说明](THIRD_PARTY_NOTICES.md) 和 [LICENSE](LICENSE)。
 
-欢迎参与贡献！请先阅读 [贡献指南](docs/CONTRIBUTE.md)。
-<sub><sup>Contributions are welcome. Please read the <a href="docs/CONTRIBUTE.md">Contribution Guide</a> first.</sup></sub>
-
-### 🌟 贡献者
-<sub><sup>Contributors</sup></sub>
-
-<a href="https://github.com/MaiM-with-u/MaiBot/graphs/contributors">
-  <img alt="contributors" src="https://contrib.rocks/image?repo=MaiM-with-u/MaiBot" />
-</a>
-
-### 🤝 开源项目友链
-<sub><sup>Open Source Friends</sup></sub>
-
-- **[AstrBot](https://github.com/AstrBotDevs/AstrBot)**: 优秀的LLM Agent项目  
-  <sub><sup>An excellent LLM Agent project.</sup></sub>
-
-### ❤️ 特别致谢
-<sub><sup>Special Thanks</sup></sub>
-
-- **[萨卡班甲鱼](https://en.wikipedia.org/wiki/Sacabambaspis)**：千石可乐很喜欢的生物。  
-  <sub><sup><strong><a href="https://en.wikipedia.org/wiki/Sacabambaspis">Sacabambaspis</a></strong>: SengokuCola's favorite creature.</sup></sub>
-- **[略nd](https://space.bilibili.com/1344099355)**：为麦麦绘制早期的精美人设。  
-  <sub><sup>Drew MaiSaka's beautiful early character design.</sup></sub>
-- **[NapCat](https://github.com/NapNeko/NapCatQQ)**：现代化的基于 NTQQ 的 Bot 协议实现。  
-  <sub><sup>A modern NTQQ-based bot protocol implementation.</sup></sub>
-
----
-
-## 📊 仓库状态
-<sub><sup>Repository Status</sup></sub>
-
-![Alt](depends-data/repository-metrics.svg "麦麦仓库状态")
-
-### Star History
-
-![Star 趋势](depends-data/star-history.svg)
-
----
-
-## 📌 注意事项 & License
-<sub><sup>Notice & License</sup></sub>
-
-> [!IMPORTANT]
-> 使用前请阅读 [用户协议 (EULA)](EULA.md) 和 [隐私协议](PRIVACY.md)。AI 生成内容请仔细甄别。  
-> <sub><sup>Please read the <a href="EULA.md">End User License Agreement (EULA)</a> and <a href="PRIVACY.md">Privacy Policy</a> before use. Please evaluate AI-generated content carefully.</sup></sub>
-
-**License**: GPL-3.0
+QQ、SnowLuma、Python 与模型服务是独立外部依赖，不打包其二进制、登录态或服务授权。使用时遵守各服务条款，仅处理你有权处理的群聊数据。管理面板具有配置与服务控制能力，默认仅在本机访问，不要直接暴露到公网。
